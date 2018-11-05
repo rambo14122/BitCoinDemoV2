@@ -1,0 +1,19 @@
+page-payment {
+
+  ion-list {
+    ion-label {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 3px;
+      font-style: italic;
+    }
+    ion-input {
+      font-style: italic;
+      margin-right: 5px;
+      border-radius: 10px !important;
+      background-color: #F7F7F7 !important;
+      border-bottom: 3px solid black;
+    }
+  }
+
+}

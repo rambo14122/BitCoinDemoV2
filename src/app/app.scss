@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +13,66 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.customItem {
+  border-radius: 10px !important;
+  border: 2px solid #B2B2B2 !important;
+  margin-top: 5vh !important;
+  .avatar {
+    text-align: center;
+    height: 5vh !important;
+    width: 5vh !important;
+    color: white;
+    padding-top: 0.5vh;
+    border-radius: 2.5vh;
+    ion-icon {
+      height: 5vh !important;
+    }
+  }
+}
+
+.actionButton {
+  margin-top: 5% !important;
+  font-weight: bold;
+  padding: 20px 0 !important;
+}
+
+.strongText {
+  color: orange;
+  font-weight: bold;
+}
+
+.backdropMask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 247, 247, 0.4) !important;
+}
+
+ion-navbar.toolbar {
+  height: 10px !important;
+}
+
+.reminder {
+  width: 94%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ion-header {
+
+  background-color: color($colors, dark, base);
+  padding-top: 5% !important;
+  padding-bottom: 0 !important;
+  ion-item {
+    background-color: transparent !important;
+    color: white !important;
+    ion-thumbnail {
+      background-color: white;
+      border-radius: 10px !important;
+      padding: 2px;
+      border: 2px solid #B2B2B2 !important;
+    }
+  }
+}
+

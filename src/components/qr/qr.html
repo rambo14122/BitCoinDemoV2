@@ -1,0 +1,10 @@
+<div class="backdropMask">
+  <ion-card>
+    <ion-card-header>
+      <ion-icon style="zoom:2.0;" name="close-circle" (click)="goBack()" large></ion-icon>
+    </ion-card-header>
+    <ion-card-content>
+      <qrcode [qrdata]="address" [size]="512" [level]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+</div>

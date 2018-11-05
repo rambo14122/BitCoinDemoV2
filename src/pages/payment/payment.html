@@ -1,0 +1,55 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-item no-lines>
+    <ion-thumbnail item-start>
+      <img src="../../assets/imgs/bitcoin.png">
+    </ion-thumbnail>
+    <h2>用户充值</h2>
+    <p>比特币充值</p>
+  </ion-item>
+  <ion-navbar color="dark">
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="reminder">Send BTC to the address below:</div>
+  <ion-list no-lines>
+    <ion-item class="customItem">
+      <ion-icon class="avatar" item-start style="background-color: green;" name="logo-bitcoin"></ion-icon>
+      <ion-label inline>BTC:
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="btcAmount" (ionChange)="updateCny()"></ion-input>
+      <ion-icon name="copy" style="color:green;" small item-end (click)="copyToClipBoard(btcAmount)"></ion-icon>
+    </ion-item>
+
+    <ion-item class="customItem">
+      <ion-icon class="avatar" item-start style="background-color: blue;" name="logo-yen"></ion-icon>
+      <ion-label inline>CNY:</ion-label>
+      <ion-input type="number" [(ngModel)]="cnyAmount" (ionChange)="updateBtc()"></ion-input>
+      <ion-icon name="copy" style="color:blue;" small item-end (click)="copyToClipBoard(cnyAmount)"></ion-icon>
+    </ion-item>
+
+    <ion-item class="customItem">
+      <ion-icon class="avatar" item-start style="background-color: red;" name="locate"></ion-icon>
+      <ion-label inline>ADR:</ion-label>
+      <ion-input type="text" style="overflow:hidden;" [(ngModel)]="address" (ionChange)="updateBtc()"></ion-input>
+      <ion-icon name="copy" style="color:red;" small item-end (click)="copyToClipBoard(address)"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <button class="actionButton" ion-button block color="dark" (click)="presentContactModal()" icon-start>
+    <ion-icon name="qr-scanner"></ion-icon>
+    Show QR
+  </button>
+  <button class="actionButton" ion-button block color="dark" (click)="confirm()" icon-start>
+    <ion-icon name="checkbox-outline"></ion-icon>
+    Confirm
+  </button>
+
+
+</ion-content>

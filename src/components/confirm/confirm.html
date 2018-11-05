@@ -1,0 +1,23 @@
+<div class="backdropMask">
+  <ion-card>
+    <ion-card-header>
+      Transaction Confirmed !
+    </ion-card-header>
+    <ion-card-content>
+      You have paid
+      <span class="strongText">
+            <ion-icon name="logo-bitcoin"></ion-icon>
+      {{btcAmount}}
+      </span>
+
+      to <span class="strongText">{{address}}</span>!
+      <div>
+        Thanks for using!
+      </div>
+      <button class="actionButton" ion-button block color="dark" (click)="goBack()" icon-start>
+        <ion-icon name="close-circle"></ion-icon>
+        Confirm
+      </button>
+    </ion-card-content>
+  </ion-card>
+</div>
